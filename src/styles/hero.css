@@ -1,0 +1,90 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: var(--py-xl) var(--px-lg);
+    background: linear-gradient(to bottom, #23A6F0, #B2E3FF); /* Adiciona um gradiente de fundo */
+    color: var(--light-text-color);
+    text-align: center;
+    position: relative; /* Necessário para os pseudo-elementos */
+    overflow: hidden; /* Garante que as nuvens não ultrapassem a seção */
+}
+
+.hero::before, .hero::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background: url('') no-repeat; /* Substitua pelo caminho da imagem da nuvem */
+    background-size: cover;
+    z-index: 1;
+}
+
+.hero::before {
+    top: 10%;
+    left: 10%;
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.hero::after {
+    bottom: 10%;
+    right: 10%;
+    opacity: 0.6;
+    transform: scale(0.8);
+}
+
+.hero h1 {
+    font-size: var(--fs-2xl);
+    margin-bottom: 1rem;
+    color: var(--light-text-color);
+    position: relative; /* Para garantir que o texto fique acima das nuvens */
+    z-index: 2;
+}
+
+.hero p {
+    color: var(--light-text-color);
+    margin-bottom: 2rem;
+    max-width: 600px; /* Limita a largura do parágrafo para melhorar a legibilidade */
+    position: relative; /* Para garantir que o texto fique acima das nuvens */
+    z-index: 2;
+}
+
+.btn-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: relative; /* Para garantir que os botões fiquem acima das nuvens */
+    z-index: 2;
+}
+
+.btn-wrapper .primary-btn, .btn-wrapper .secondary-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--fs-base);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-wrapper .primary-btn {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border: none; /* Remove a borda padrão */
+}
+
+.btn-wrapper .primary-btn:hover {
+    background-color: #1a8cd8; /* Cor de hover mais escura */
+}
+
+.btn-wrapper .secondary-btn {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color); /* Adiciona borda para contraste */
+}
+
+.btn-wrapper .secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}

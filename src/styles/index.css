@@ -1,0 +1,223 @@
+/* Reseta e define box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Variáveis de estilo */
+:root {
+  --bg-color: #FFF;
+  --primary-color: #23A6F0;
+  --secondary-color: #B2E3FF;
+  --text-color: #252B42;
+  --second-text-color: #737373;
+  --light-gray: #F8F8F8;
+  --light-text-color: #FFF;
+
+  --ff-sans: "Montserrat", system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+
+  --py-sm: 0.875rem;
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+  --px-lg: 1.5rem;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--text-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+
+/* Estilos para títulos */
+h1, h2, h3 {
+  line-height: 1.2;
+  color: var(--text-color);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--second-text-color);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+}
+
+/* Botões */
+button.primary-btn {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+}
+
+button.secondary-btn {
+  background-color: var(--light-gray);
+  color: var(--text-color); 
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+section {
+  padding: var(--py-xl) 0;
+}
+
+section h1 {
+  margin-bottom: 1rem;
+}
+
+section p {
+  color: var(--second-text-color);
+  margin-bottom: 1.5rem;
+}
+
+.btn-wrapper button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.secondary-btn {
+  background-color: var(--light-gray);
+  color: var(--text-color);
+}
+
+/* Soluções Section */
+.solutions {
+  text-align: center;
+  padding: var(--py-lg);
+}
+
+.solutions h2 {
+  margin-bottom: 1rem;
+}
+
+.solutions p {
+  color: var(--second-text-color);
+  margin-bottom: 2rem;
+}
+
+.even-columns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 2rem;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  font-size: var(--fs-lg);
+}
+
+.card p {
+  color: var(--second-text-color);
+}
+
+/* Animação de hover para os cartões */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .even-columns {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .btn-wrapper {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+      --fs-lg: 2rem;
+      --fs-xl: 2.625rem;
+      --fs-2xl: 4rem;
+
+      --py-sm: 1rem;
+      --py-base: 1.5rem;
+      --py-lg: 2.5rem;
+      --py-xl: 5rem;
+      --px-lg: 2rem;
+  }
+}
