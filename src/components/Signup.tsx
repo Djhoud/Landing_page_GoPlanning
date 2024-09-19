@@ -11,20 +11,22 @@ const Signup = () => {
   };
 
   return (
-    <div className="Signup">
-      <h2>Inscreva-se para mais novidades</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Seu e-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <button type="submit">Inscrever-se</button>
-      </form>
-    </div>
-  );
+    
+      <div className="signup"> 
+        <h2>Inscreva-se para mais novidades</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Seu e-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <button type="submit">Inscrever-se</button>
+        </form>
+      </div>
+    );
+    
 };
 
 export default Signup;

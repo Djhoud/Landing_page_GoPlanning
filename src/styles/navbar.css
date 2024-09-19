@@ -1,4 +1,4 @@
-/* Estilo geral da navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -12,13 +12,12 @@
     z-index: 1000;
 }
 
-/* Estilo do logo */
+
 .logo img {
     width: 250px;
     height: auto;
 }
 
-/* Estilo da lista do menu */
 .menu-list {
     display: flex;
     gap: 1rem;
@@ -27,7 +26,7 @@
     list-style: none;
 }
 
-/* Estilo dos links do menu */
+
 .menu-list li a {
     color: #ffffff !important;
     font-weight: var(--fw-md);
@@ -43,7 +42,7 @@
     color: #1A5BA0 !important;
 }
 
-/* Estilo da navbar para mobile */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -72,7 +71,7 @@
     }
 }
 
-/* Adicionar padding ao body para evitar sobreposição */
+
 body {
-    padding-top: 80px; /* Ajuste conforme necessário para a altura da navbar */
+    padding-top: 80px; 
 }

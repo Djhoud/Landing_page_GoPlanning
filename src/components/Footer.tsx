@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="Footer">
+    <footer className="footer">
       <div className="footer-links">
         <a href="#" onClick={handleClick}>Sobre Nós</a>
         <a href="#" onClick={handleClick}>Faça Parte do Time</a>

@@ -1,4 +1,4 @@
-/* Soluções Section */
+
 .solutions {
     text-align: center;
     padding: var(--py-lg);
@@ -22,16 +22,16 @@
 
 .card {
     padding: 2rem;
-    background: linear-gradient(145deg, var(--light-gray), #e2e2e2); /* Gradiente para efeito visual */
-    border: 2px solid var(--primary-color); /* Borda chamativa */
-    border-radius: 12px; /* Borda arredondada mais pronunciada */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    background: linear-gradient(145deg, var(--light-gray), #e2e2e2); 
+    border: 2px solid var(--primary-color); 
+    border-radius: 12px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     text-align: center;
     flex: 1;
-    max-width: 350px; /* Aumenta a largura máxima dos cartões */
+    max-width: 350px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     margin: 1rem;
-    position: relative; /* Necessário para o efeito de antes e depois */
+    position: relative; 
 }
 
 .card h3 {
@@ -53,22 +53,22 @@
     right: 0;
     bottom: 0;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.1); /* Efeito de brilho leve */
+    background: rgba(255, 255, 255, 0.1); 
     transition: opacity 0.3s ease;
     z-index: 1;
 }
 
 .card:hover::before {
-    opacity: 0; /* Remove o brilho ao passar o mouse */
+    opacity: 0; 
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Sombra mais profunda */
-    border-color: var(--secondary-color); /* Altera a cor da borda no hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); 
+    border-color: var(--secondary-color); 
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .even-columns {
         flex-direction: column;

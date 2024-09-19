@@ -1,4 +1,4 @@
-/* Reseta e define box-sizing */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -54,7 +54,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Estilos para títulos */
+
 h1, h2, h3 {
   line-height: 1.2;
   color: var(--text-color);
@@ -74,7 +74,7 @@ h3 {
   font-size: var(--fs-lg);
 }
 
-/* Links */
+
 a {
   text-decoration: none;
   color: var(--second-text-color);
@@ -86,18 +86,18 @@ a:hover {
   color: var(--primary-color);
 }
 
-/* Imagens */
+
 img {
   max-width: 100%;
   display: inline-block;
 }
 
-/* Listas */
+
 ul {
   list-style: none;
 }
 
-/* Botões */
+
 button.primary-btn {
   background-color: var(--primary-color);
   color: var(--light-text-color);
@@ -116,7 +116,7 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Hero Section */
+
 section {
   padding: var(--py-xl) 0;
 }
@@ -146,7 +146,7 @@ section p {
   color: var(--text-color);
 }
 
-/* Soluções Section */
+
 .solutions {
   text-align: center;
   padding: var(--py-lg);
@@ -189,13 +189,11 @@ section p {
   color: var(--second-text-color);
 }
 
-/* Animação de hover para os cartões */
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .even-columns {
       flex-direction: column;

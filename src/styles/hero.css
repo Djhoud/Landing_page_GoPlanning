@@ -5,11 +5,11 @@
     justify-content: center;
     min-height: 100vh;
     padding: var(--py-xl) var(--px-lg);
-    background: linear-gradient(to bottom, #23A6F0, #B2E3FF); /* Adiciona um gradiente de fundo */
+    background: linear-gradient(to bottom, #23A6F0, #B2E3FF); 
     color: var(--light-text-color);
     text-align: center;
-    position: relative; /* Necessário para os pseudo-elementos */
-    overflow: hidden; /* Garante que as nuvens não ultrapassem a seção */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .hero::before, .hero::after {
@@ -17,7 +17,7 @@
     position: absolute;
     width: 150px;
     height: 100px;
-    background: url('') no-repeat; /* Substitua pelo caminho da imagem da nuvem */
+    background: url('') no-repeat; 
     background-size: cover;
     z-index: 1;
 }
@@ -40,15 +40,15 @@
     font-size: var(--fs-2xl);
     margin-bottom: 1rem;
     color: var(--light-text-color);
-    position: relative; /* Para garantir que o texto fique acima das nuvens */
+    position: relative; 
     z-index: 2;
 }
 
 .hero p {
     color: var(--light-text-color);
     margin-bottom: 2rem;
-    max-width: 600px; /* Limita a largura do parágrafo para melhorar a legibilidade */
-    position: relative; /* Para garantir que o texto fique acima das nuvens */
+    max-width: 600px; 
+    position: relative; 
     z-index: 2;
 }
 
@@ -56,7 +56,7 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    position: relative; /* Para garantir que os botões fiquem acima das nuvens */
+    position: relative; 
     z-index: 2;
 }
 
@@ -71,17 +71,17 @@
 .btn-wrapper .primary-btn {
     background-color: var(--primary-color);
     color: var(--light-text-color);
-    border: none; /* Remove a borda padrão */
+    border: none; 
 }
 
 .btn-wrapper .primary-btn:hover {
-    background-color: #1a8cd8; /* Cor de hover mais escura */
+    background-color: #1a8cd8; 
 }
 
 .btn-wrapper .secondary-btn {
     background-color: var(--light-gray);
     color: var(--text-color);
-    border: 2px solid var(--primary-color); /* Adiciona borda para contraste */
+    border: 2px solid var(--primary-color); 
 }
 
 .btn-wrapper .secondary-btn:hover {

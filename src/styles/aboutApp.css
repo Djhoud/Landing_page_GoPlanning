@@ -1,7 +1,7 @@
 .about-app {
     padding: 4rem 2rem;
     background-color: #f5f5f5;
-    /* border: 2px solid red; Remova isso se não precisar mais */
+    /* border: 2px solid red; */
 }
 
 
@@ -38,7 +38,7 @@
     border-radius: 8px;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .about-app-content {
         flex-direction: column;
