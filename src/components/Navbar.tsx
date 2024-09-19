@@ -12,7 +12,7 @@ const Navbar = () => {
           <li><a href="#" className="active">Home</a></li>
           <li><a href="#home">Solutions</a></li>
           <li><a href="#about-app">Sobre o App</a></li>
-          <li><a href="#signup">Contact</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
