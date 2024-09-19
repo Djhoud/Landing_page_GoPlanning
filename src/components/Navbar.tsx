@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="logo">
-        <img src={logo_goplanning} alt="Logo GoPlanning" className="logo" />
+        <img src={logo_goplanning} alt="Logo GoPlanning" className="logo"/>
       </div>
       <nav className="menu">
         <ul className="menu-list">
